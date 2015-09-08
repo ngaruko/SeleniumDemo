@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC97AD16-862A-4520-84AC-4184B591BD47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IbrightDriveAutomation</RootNamespace>
+    <AssemblyName>IbrightDriveAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AFrame.Core, Version=0.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AFrame.Core.0.6.3.0\lib\net45\AFrame.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AFrame.Mobile, Version=0.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AFrame.Mobile.0.6.3.0\lib\net45\AFrame.Mobile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="appium-dotnet-driver, Version=1.2.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Appium.WebDriver.1.2.0.8\lib\net40\appium-dotnet-driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Selenium.WebDriver.Extensions.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.Extensions.Core.1.5.457\lib\net45\Selenium.WebDriver.Extensions.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Selenium.WebDriver.Extensions.Shared, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.Extensions.Shared.1.1.166\lib\net45\Selenium.WebDriver.Extensions.Shared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Selenium.WebDriverBackedSelenium, Version=2.45.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriverBackedSelenium.2.45.0\lib\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.Selenium.Core, Version=2.45.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.RC.2.45.0\lib\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver, Version=2.45.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.2.45.0\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.45.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.2.45.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Appium\Driver.cs" />
+    <Compile Include="Navigation\ActionOverflowNavigation.cs" />
+    <Compile Include="Navigation\DeviceNavigation.cs" />
+    <Compile Include="Navigation\MenuSelector.cs" />
+    <Compile Include="Navigation\PageChecker.cs" />
+    <Compile Include="Navigation\TopMenuNavigation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\ActionOverflow\AboutScreen.cs" />
+    <Compile Include="Screens\ActionOverflow\DiagnosticsScreen.cs" />
+    <Compile Include="Screens\ActionOverflow\DisplayTestCardsScreen.cs" />
+    <Compile Include="Screens\ActionOverflow\SettingsScreen.cs" />
+    <Compile Include="Screens\Dashboard\AssignEquipmentScreen.cs" />
+    <Compile Include="Screens\Dashboard\ChangeVehicleScreen.cs" />
+    <Compile Include="Screens\Dashboard\DashboardMainScreen.cs" />
+    <Compile Include="Screens\Dashboard\MessagesScreen.cs" />
+    <Compile Include="Screens\Dashboard\SelectVehicleScreen.cs" />
+    <Compile Include="Screens\Dashboard\SignInScreen.cs" />
+    <Compile Include="Screens\Dashboard\SignoutScreen.cs" />
+    <Compile Include="Screens\Jobs\ExpensesClaimForm.cs" />
+    <Compile Include="Screens\Jobs\FormsScreen.cs" />
+    <Compile Include="Screens\Jobs\FuelPurchaseForm.cs" />
+    <Compile Include="Screens\Jobs\JobListScreen.cs" />
+    <Compile Include="Workflows\Processes.cs" />
+    <Compile Include="Workflows\SignInProcess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Screens\EfleetSuite\" />
+    <Folder Include="Screens\Messages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

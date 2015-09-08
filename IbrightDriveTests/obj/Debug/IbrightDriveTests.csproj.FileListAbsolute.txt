@@ -1,0 +1,14 @@
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\IbrightDriveTests.dll
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\IbrightDriveTests.pdb
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\IbrightDriveAutomation.dll
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\nunit.framework.dll
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\appium-dotnet-driver.dll
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\WebDriver.dll
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\Newtonsoft.Json.dll
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\IbrightDriveAutomation.pdb
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\nunit.framework.xml
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\WebDriver.xml
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\bin\Debug\Newtonsoft.Json.xml
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\obj\Debug\IbrightDriveTests.csprojResolveAssemblyReference.cache
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\obj\Debug\IbrightDriveTests.dll
+C:\ITL_CODE\Drive Automation\IbrightDriveAutomation\IbrightDriveTests\obj\Debug\IbrightDriveTests.pdb
